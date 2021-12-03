@@ -1,5 +1,5 @@
 PImage fox;
-PImage [] bg =  new PImage[5];
+PImage [] bg =  new PImage[7];
 int counter = 0;
 void setup() {
   size(1280, 720);
@@ -32,7 +32,7 @@ public void scene1(){
   image(fox,100,100);
   if (key == CODED) {
     if (keyCode == RIGHT){
-      scene3();
+      counter = 3;
     }
   }
 }
@@ -41,9 +41,9 @@ public void scene1(){
 public void scene2(){
   background(bg[1]);
   fox = loadImage("fox.png");
-  image(fox,100,100);
+  image(fox,100,60);
   if (key == CODED ) {
-    if (keyCode == LEFT){
+    if (keyCode == UP){
       counter = 1;
     }
   }
@@ -51,8 +51,8 @@ public void scene2(){
 
 public void scene3(){
   background(bg[1]);
-  fox = loadImage("fox.png");
-  image(fox,100,100);
+  fox = loadImage("Moon.png");
+  image(fox,400,100);
    if (key == CODED ) {
   if (keyCode == LEFT){
     counter = 2;
