@@ -1,2 +1,3 @@
 # FINN
-Ren'Py interactive novel that uses Arduino input
+Interactive novel that uses Arduino input and Processing
+
